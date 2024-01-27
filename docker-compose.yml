@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  pal-world-announcer:
+    environment:
+      RCON_IP: 25.49.24.243
+      RCON_PORT: 25575
+      RCON_PASSWORD: 1123
+      INTERVAL: 5
+    image: "palworld-node-player-announcer:latest"
+    network_mode: "host"
+

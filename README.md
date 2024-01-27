@@ -30,3 +30,17 @@ INTERVAL=5 # RCON INTERVAL (5 = 5 seconds) (Default: 5)
 ```bash
 yarn start
 ```
+
+
+## Docker method
+This method is for docker usage to build your own `docker images` and up with `docker-compose`.  
+
+1. Build docker
+```bash
+docker build -t palworld-node-player-announcer .
+```
+
+2. Using `docker-compose.yml` 
+```bash
+docker-compose up --force-recreate -d
+```
