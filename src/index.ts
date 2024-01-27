@@ -24,8 +24,6 @@ async function connectFunc(client: RconClient){
     }
     else if(currentPlayerCount !== nowPlayer.length) {
         const diff = Math.abs(nowPlayer.length - currentPlayerCount)
-
-        console.log(diff)
         
         if(nowPlayer.length > currentPlayerCount){ // New player join
             await announceLeaveJoin(diff, "JOIN", nowPlayer.length)

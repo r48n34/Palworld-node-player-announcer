@@ -7,7 +7,7 @@ A dead simple method to announce player join and leave count (Count only, due to
 ## Install 
 1. Clone the projects
 ```bash
-git clone 
+git clone https://github.com/r48n34/Palworld-node-player-announcer.git
 ```
 
 2. Install packages

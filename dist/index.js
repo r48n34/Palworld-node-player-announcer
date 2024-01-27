@@ -32,7 +32,6 @@ function connectFunc(client) {
         }
         else if (currentPlayerCount !== nowPlayer.length) {
             const diff = Math.abs(nowPlayer.length - currentPlayerCount);
-            console.log(diff);
             if (nowPlayer.length > currentPlayerCount) { // New player join
                 yield announceLeaveJoin(diff, "JOIN", nowPlayer.length);
             }
