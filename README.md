@@ -4,7 +4,7 @@
 
 > Currently in beta, use at your own risks
 
-A dead simple method to announce player join and leave count (Count only, due to bugs currently).
+A dead simple method to announce player join and leave count (Count only, due to bugs currently) by nodejs.
 
 ## Install 
 1. Clone the project
@@ -44,3 +44,7 @@ docker build -t palworld-node-player-announcer .
 ```bash
 docker-compose up --force-recreate -d
 ```
+
+## Q&A
+Q. Why not to shows player name  
+A. Due to current RCON display non-english word issues, this solution is only for display players joning or leave.
