@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "commonjs",
+        "target": "es2015",
+        "declaration": false,
+        "lib": ["es6", "dom"],
+        "sourceMap": true,
+        "outDir": "./dist",
+        "allowJs": true,
+        "jsx": "react",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noUnusedLocals": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "test",
+        "test-data",
+        "node_modules",
+        "test-data",
+        "dist",
+        "build",
+        "scripts",
+        "index.js"
+    ]
+}

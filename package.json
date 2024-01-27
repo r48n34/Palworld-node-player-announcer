@@ -1,0 +1,26 @@
+{
+  "name": "palworld-node-player-announcer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "jest --maxWorkers 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/number-to-words": "^1.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "number-to-words": "^1.2.4",
+    "rconify": "^1.0.1"
+  }
+}
