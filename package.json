@@ -6,7 +6,8 @@
   "scripts": {
     "start": "yarn build && node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "docker-up": "docker build -t palworld-node-player-announcer . && docker-compose up --force-recreate -d"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
     "dotenv": "^16.4.1",
     "number-to-words": "^1.2.4",
     "rconify": "^1.0.1"
