@@ -20,7 +20,7 @@ function connectFunc(client) {
         function announceLeaveJoin(diffArr, mode, maxPLayer) {
             return __awaiter(this, void 0, void 0, function* () {
                 const sendText = `${(0, commonUtils_1.numberToFormatStr)(diffArr)}-player-${mode === "LEAVE" ? "leaved" : "joined"}|(Total-${maxPLayer})`;
-                console.log(sendText);
+                console.log(`${sendText} (${new Date().toUTCString()})`);
                 yield client.sendCommand(`Broadcast ${sendText}`);
             });
         }

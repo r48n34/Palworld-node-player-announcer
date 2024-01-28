@@ -10,7 +10,7 @@ async function connectFunc(client: RconClient){
     // Announce player leave or join 
     async function announceLeaveJoin(diffArr: number, mode: "LEAVE" | "JOIN", maxPLayer: number){
         const sendText = `${numberToFormatStr(diffArr)}-player-${mode === "LEAVE" ? "leaved" : "joined"}|(Total-${maxPLayer})`;
-        console.log(sendText)
+        console.log(`${sendText} (${new Date().toUTCString()})`)
         await client.sendCommand(`Broadcast ${sendText}`);
     }
 
